@@ -1,0 +1,294 @@
+/* App.css
+
+/* Global styles 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}*/
+
+.header {
+  background-color: #99CCFF;
+  color: #000099;
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 50px;
+}
+
+
+/* Side menu styles 
+.side-menu {
+  background-color:#DDDDDD;
+  color: #000000;
+  padding: 20px 0;
+  width: 20%;
+  height:100vh;
+
+}
+.side-menu h1 {
+  text-align: center;
+}
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+  color: #001100;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.side-menu ul li a:hover {
+  color: #ff6600;
+}
+
+/* Main content styles 
+.main-content {
+  padding: 20px;
+}*/
+
+
+
+.main-content {
+  height: 100vh;
+  padding: 20px;
+}
+
+.image-slider {
+  position: relative;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.image-slider img.active {
+  opacity: 1;
+}
+/* form đăng nhập 
+.wrapper{
+  width:500px;
+  background: #FFCCFF;
+  color: #000000;
+  text-align:center;
+  display: flex;
+  height: 45vh;
+  border-radius: 10%;
+  background: #FFCCFF;
+  
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper h1
+{
+  font-size:36px;
+  text-align:center;
+ 
+}
+.wrapper input-box {
+  position:relative;
+  width:100%;
+  height:50px;
+  background:#d5ccff;
+  margin: 30px 0;
+} 
+.input-box input {
+  width:80%;
+  height:80%;
+  background: #EEEEEE;
+  border:none;
+  outline: none;
+  border: 2px solid #BEBEBE;
+  border-radius: 40px;
+  font-size:15px ;
+  padding: 10px 15px 10px 10px;
+
+}
+.wrapper button {
+  width:40%;
+  height:100%;
+  outline:none;
+  box-shadow:0 0 10 rgb(153, 51, 99) ;
+  cursor: pointer;
+  font-size: 25px;
+  background-color:#FF66CC;
+  font-weight:600;
+  border-radius: 40px;
+ 
+} */
+.navbar{
+  display:flex;
+  justify-content: space-around ;
+  padding: 16px;
+  
+}
+.nav-logo{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.nav-logo p{
+  color: #FF66FF;
+  font-size: 24px;
+  font-weight: 500;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #001100;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #ff6600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  font-size: 15px;
+  font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #FFCCFF;
+}
+
+.nav-login-cart{
+  display:flex;
+  align-items: center;
+  gap:45px;
+}
+.nav-login-cart button {
+  width: 90px;
+  height: 50px;
+  outline: none;
+  border: 1px solid #0e0e0f;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  background: #EEEEEE;
+  cursor: pointer;
+}
+
+.nav-login-cart button:active {
+  background: #FF99CC;
+}
+
+.Footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Footer-logo p {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.Footer-links{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.Footer-links li{
+  cursor: pointer;
+}
+
+.Footer-social-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.Footer-icons-container{
+  padding: 10px;
+  border: 1px solid #ebebeb;
+}
+
+.product {
+  display: flex;
+  height: 60vh;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-item{
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.item:hover{
+  transform: scale(1.05);
+  transition: 0.6s;
+}
