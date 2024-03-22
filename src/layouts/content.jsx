@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import image1 from "../Assets/banner_mens.png";
 import image2 from "../Assets/banner_women.png";
 import image3 from "../Assets/banner_kids.png";
-import Product from "./product";
+import HotProduct from "../components/hot-product";
+import NewProduct from "../components/new-product";
 function ImageSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [image1, image2, image3];
@@ -34,7 +35,8 @@ function Content() {
   return (
     <div className="main-content">
       <ImageSlider />
-      <Product/>
+      <HotProduct />
+      <NewProduct />
     </div>
   );
 }

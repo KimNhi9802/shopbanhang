@@ -1,11 +1,10 @@
 import React from "react";
-import logo from "./img/image1.jpg";
 import { FaGooglePlusG, FaFacebookF, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <div className="Footer">
       <div className="Footer-logo">
-        <img src={logo} alt="footer-logo" style={{width:'80px'}}/>
+        <img  alt="footer-logo" style={{width:'80px'}}/>
         <p> NiHiShop</p>
       </div>
       <ul className="Footer-links">
