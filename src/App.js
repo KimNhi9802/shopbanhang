@@ -1,16 +1,15 @@
 import "./App.css";
 import React from "react";
-import Header from "./components/layouts/header";
+import Header from "./layouts/header";
 // import Sidemenu from "./components/layouts/side-menu";
 // import FormDangnhap from "./components/login/form-dang-nhap";
 // import { Divider } from "antd";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Content from "./components/layouts/content";
-import Home from "./components/layouts/home";
-import Product from "./components/layouts/product";
-import About from "./components/layouts/about";
-import Contact from "./components/layouts/contact";
-import Footer from "./components/layouts/footer";
+import Home from "./layouts/home";
+import Product from "./layouts/product";
+import About from "./layouts/about";
+import Contact from "./layouts/contact";
 
 function App() {
   return (
